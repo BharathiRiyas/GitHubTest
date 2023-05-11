@@ -26,7 +26,7 @@ public class TodoController {
 	public String listAllTodos(ModelMap model) {
 		List<Todo> todos = todoService.findByUsername("in28minutes");
 		model.addAttribute("todos", todos);
-		
+		System.out.println("This is list of todos method");
 		return "listTodos";
 	}
 
